@@ -33,5 +33,15 @@ int main() {
         cin.ignore();
     }
 
+    cout << "\nLISTADO DE LIBROS REGISTRADOS\n";
+
+    for (int i = 0; i < n; i++) {
+        cout << "\nLibro " << i + 1 << endl;
+        cout << "Titulo: " << libros[i].titulo << endl;
+        cout << "Autor: " << libros[i].autor << endl;
+        cout << "Editorial: " << libros[i].editorial << endl;
+        cout << "Anio: " << libros[i].anioPublicacion << endl;
+    }
+
     return 0;
 }
