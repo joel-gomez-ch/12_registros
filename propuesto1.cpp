@@ -43,5 +43,15 @@ int main() {
         }
     }
 
+    cout << "\nEMPLEADO CON MAYOR SUELDO\n";
+    cout << "Nombre: " << empleados[mayor].nombre << endl;
+    cout << "Sexo: " << empleados[mayor].sexo << endl;
+    cout << "Sueldo: " << empleados[mayor].sueldo << endl;
+
+    cout << "\nEMPLEADO CON MENOR SUELDO\n";
+    cout << "Nombre: " << empleados[menor].nombre << endl;
+    cout << "Sexo: " << empleados[menor].sexo << endl;
+    cout << "Sueldo: " << empleados[menor].sueldo << endl;
+
     return 0;
 }
