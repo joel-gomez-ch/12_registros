@@ -30,5 +30,18 @@ int main() {
         cin.ignore();
     }
 
+    int mayor = 0;
+    int menor = 0;
+
+    for (int i = 1; i < n; i++) {
+        if (empleados[i].sueldo > empleados[mayor].sueldo) {
+            mayor = i;
+        }
+
+        if (empleados[i].sueldo < empleados[menor].sueldo) {
+            menor = i;
+        }
+    }
+
     return 0;
 }
