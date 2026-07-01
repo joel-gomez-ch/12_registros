@@ -46,6 +46,26 @@ int main() {
 
         if (mes != 0) {
 
+            cout << "\nCumplen años en el mes " << mes << ":\n";
+
+            bool encontrado = false;
+
+            for (int i = 0; i < n; i++) {
+
+                if (personas[i].mesNacimiento == mes) {
+
+                    cout << personas[i].nombre << " - "
+                         << personas[i].diaNacimiento << "/"
+                         << personas[i].mesNacimiento << "/"
+                         << personas[i].anioNacimiento << endl;
+
+                    encontrado = true;
+                }
+            }
+
+            if (!encontrado) {
+                cout << "No hay personas que cumplan años en ese mes." << endl;
+            }
         }
 
     } while (mes != 0);
