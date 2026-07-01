@@ -55,6 +55,10 @@ int main() {
             cout << "Medallas: " << atletas[i].medallas << endl;
 
             encontrado = true;
+
+            if (mayor == -1 || atletas[i].medallas > atletas[mayor].medallas) {
+                mayor = i;
+            }
         }
     }
 
