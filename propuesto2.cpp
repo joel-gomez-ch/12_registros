@@ -30,5 +30,18 @@ int main() {
         cin.ignore();
     }
 
+    int mayores50 = 0;
+    int sumaEdades = 0;
+
+    for (int i = 0; i < n; i++) {
+        sumaEdades += personas[i].edad;
+
+        if (personas[i].edad > 50) {
+            mayores50++;
+        }
+    }
+
+    float promedio = (float)sumaEdades / n;
+
     return 0;
 }
