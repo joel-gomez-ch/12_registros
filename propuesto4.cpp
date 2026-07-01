@@ -36,5 +36,27 @@ int main() {
         cin.ignore();
     }
 
+    string paisBuscado;
+
+    cout << "\nIngrese el nombre del pais: ";
+    getline(cin, paisBuscado);
+
+    bool encontrado = false;
+    int mayor = -1;
+
+    cout << "\nATLETAS DEL PAIS " << paisBuscado << endl;
+
+    for (int i = 0; i < n; i++) {
+
+        if (atletas[i].pais == paisBuscado) {
+
+            cout << "\nNombre: " << atletas[i].nombre << endl;
+            cout << "Disciplina: " << atletas[i].disciplina << endl;
+            cout << "Medallas: " << atletas[i].medallas << endl;
+
+            encontrado = true;
+        }
+    }
+
     return 0;
 }
